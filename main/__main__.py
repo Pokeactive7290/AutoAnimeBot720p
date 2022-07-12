@@ -10,9 +10,9 @@ from main.modules.tg_handler import tg_handler
 
 loop = asyncio.get_event_loop()
 
-@app.on_message(filters.command(["start","help","ping"]))
+@app.on_message(filters.command(["start","help","ping","online"]))
 async def start(bot, message: Message):
-  return await message.reply_text("⭐️ **Bot Is Online...**\n\n**Updates :** @TechZBots **| Support :** @TechZBots_Support")
+  return await message.reply_text("⭐️ **Bot Is Online.[.](https://telegra.ph/file/c191217ab3c439271c0d4.jpg).**\n\n**Updates :** @AniXDex **| Support :** @AniXDiscuss")
 
 async def start_bot():
   await app.send_message(UPLOADS_ID,f"⭐️ **Bot Started...**\n\n`Uploading Will Start After 10 Minutes`\n\nCheck Status : [Here](https://t.me/{UPLOADS_USERNAME}/{STATUS_ID})")
